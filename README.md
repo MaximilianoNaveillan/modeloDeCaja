@@ -373,3 +373,25 @@ Al finalizar, los estudiantes deben entender:
 - Agregar `display: flex` en `.card__social`
 - Agregar un `:hover` a los enlaces
 - Convertir la card en responsive
+
+## considerar:
+
+# Tabla 1 – Propiedad display
+
+| Display        | ¿Ocupa toda la línea?  | ¿Permite width/height? | ¿Se alinean en línea? | Uso típico                                  |
+| -------------- | ---------------------- | ---------------------- | --------------------- | ------------------------------------------- |
+| `block`        | Sí                     | Sí                     | No                    | Contenedores, secciones, div, p, h1-h6      |
+| `inline`       | No                     | ❌ No                  | Sí                    | span, enlaces dentro de texto               |
+| `inline-block` | No                     | Sí                     | Sí                    | Botones, tarjetas pequeñas, íconos          |
+| `none`         | ❌ No (no se muestra)  | ❌ No                  | ❌ No                 | Ocultar elementos                           |
+| `flex`         | Depende del contenedor | Sí                     | Depende del eje       | Layouts modernos, alineación de componentes |
+
+# Tabla 1 – Propiedad position
+
+| Position   | ¿Sale del flujo? | ¿Ocupa espacio? | ¿Respecto a qué se posiciona?                     | ¿top/left funcionan? | Uso típico                             |
+| ---------- | ---------------- | --------------- | ------------------------------------------------- | -------------------- | -------------------------------------- |
+| `static`   | No               | Sí              | Flujo normal del documento                        | ❌ No                | Layout por defecto                     |
+| `relative` | No               | Sí              | Su posición original                              | ✅ Sí                | Ajustes finos, base para absolute      |
+| `absolute` | Sí               | ❌ No           | Primer ancestro con `position` distinto de static | ✅ Sí                | Badges, overlays, tooltips             |
+| `fixed`    | Sí               | ❌ No           | Viewport (pantalla)                               | ✅ Sí                | Menús fijos, botones flotantes         |
+| `sticky`   | Parcial          | Sí              | Contenedor y luego viewport                       | ✅ Sí                | Headers que se “pegan” al hacer scroll |
