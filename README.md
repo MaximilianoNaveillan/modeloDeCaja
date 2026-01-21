@@ -48,7 +48,7 @@ En `index.html` escribir:
 </html>
 ```
 
-📌 Explicar en clase:
+📌 Nota:
 
 - `<!DOCTYPE html>` define HTML5
 - `link` conecta el CSS
